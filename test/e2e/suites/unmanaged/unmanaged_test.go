@@ -581,7 +581,7 @@ func createStorageClass(storageClassName string, k8sclient crclient.Client) {
 			Name: storageClassName,
 		},
 		Parameters: map[string]string{
-			"type": "gp2",
+			"type": "gp3",
 		},
 		Provisioner:          "kubernetes.io/aws-ebs",
 		AllowVolumeExpansion: &volExpansion,
